@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title>edon.</title>
+
+    <link rel="icon" href="images/coding.png" type="images/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Education Platform">
+    <meta name="keywords" content="Courses, Learning, Education">
+    <meta name="author" content="Stasiukevych Anatolii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TODO something without undrestanding during html learns -->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>edon.</h1>
+        <fieldset>
+            <legend>course</legend>
+            <p>
+                <input id="course_search" name="course_search" type="search">
+                <button id="do_course_search" name="do_course_search">search</button>
+            </p>
+        </fieldset>
+        <nav>
+            <ul>
+                <li>
+                    <a href="about.html">about</a>
+                </li>
+                <li>
+                    <a href="subscription.html">subscription</a>
+                </li>
+                <li>
+                    <a href="blog.html">blog</a>
+                </li>
+                <li>
+                    <a href="contact.html" target="_blank">contact us</a>
+                </li>
+            </ul>
+        </nav>
+        <figure>
+            <img src="images/header.png" alt="Education On Start">
+            <figcaption><u><em>Education</em></u> - is the most powerful power we had.</figcaption>
+        </figure>
+        <form>
+            <button id="do_exploring" type="submit" name="do_exploring" formaction="https://httpbin.org/get"
+                formmethod="get" formtarget="_blank" value="true">Explore Courses</button>
+            <button id="do_start_learning" type="submit" name="do_start_learning" formaction="https://httpbin.org/get"
+                formmethod="get" formtarget="_blank" value="true">Start Learning</button>
+        </form>
+    </header>
+
+    <hr> <!--TODO: after css, will be removed-->
+
+    <main>
+        <section id="featured_courses">
+            <h2>Featured Courses</h2>
+            <article>
+                <h2>Python Beginner</h2>
+                <figure>
+                    <img src="images/python.png" alt="Basic Python Course">
+                </figure>
+                <p>
+                    Enroll in our Python Beginner course starting on <time datetime="2024">2024</time>, and gain
+                    hands-on
+                    experience
+                    <strong>with over 20 coding exercises</strong> designed for new programmers. In just 6 weeks, you'll
+                    master the
+                    basics of Python, including data types, loops, and functions.🫡
+                </p>
+            </article>
+
+            <hr> <!--TODO: after css, will be removed-->
+
+            <article>
+                <h2>Pro Kotlin</h2>
+                <figure>
+                    <img src="images/kotlin.png" alt="Kolting for experienced">
+                </figure>
+                <p>
+                    Join our Kotlin Pro course beginning on <time datetime="2024">2024</time>, where you'll tackle
+                    <strong>15 advanced projects</strong> over the course of 8 weeks. Perfect for experienced
+                    developers, this course dives deep
+                    into Kotlin's
+                    advanced features like coroutines, DSLs, and Android app development.🧐
+                </p>
+            </article>
+
+            <hr> <!--TODO: after css, will be removed-->
+
+            <article>
+                <h2>Java Medium</h2>
+                <figure>
+                    <img src="images/java.png" alt="Java for middle level">
+                </figure>
+                <p>
+                    Starting on <time datetime="2024">2024</time>, our Java Medium course offers
+                    <strong>10 in-depth modules</strong> over 7 weeks to
+                    enhance your skills. Ideal for those with some experience, you'll explore object-oriented
+                    programming, exception handling, and Java's powerful libraries.🤓
+                </p>
+            </article>
+
+            <hr> <!--TODO: after css, will be removed-->
+
+            <article>
+                <h2>English</h2>
+                <figure>
+                    <img src="images/english.png" alt="General English">
+                </figure>
+                <p>
+                    Kick off your language journey on <time datetime="2025">2025</time>, with our English General
+                    course, featuring <strong>12 interactive lessons</strong>
+                    spread across 6 weeks. Perfect for all levels, this course cover essential
+                    grammar, vocabulary, and conversation skills to boost your fluency.🧠
+                </p>
+            </article>
+
+            <hr> <!--TODO: after css, will be removed-->
+
+            <aside>
+                <h2>Complex Apply</h2>
+                <details>
+                    <summary>How to choose a few courses?</summary>
+                    <p>Boost your learning by enrolling in multiple courses simultaneously, allowing you to master
+                        different skills in parallel. By juggling 2 to 3 courses at once, you can accelerate your
+                        progress and achieve your goals faster. (Source:<cite>
+                            <a href="https://en.wikipedia.org/wiki/Parallel_education" target="_blank">Parallel
+                                learning</a>
+                        </cite>)
+                    </p>
+                </details>
+            </aside>
+        </section>
+
+        <hr> <!--TODO: after css, will be removed-->
+
+        <section id="popular_categories">
+            <h2>Common Categories</h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Math programs</td>
+                        <td>IT courses</td>
+                        <td>Nano-tech programs</td>
+                    </tr>
+                    <tr>
+                        <td>Languages</td>
+                        <td>Movies</td>
+                        <td>Videworking</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <p><a href="#">Back To Top</a></p>
+    </main>
+
+    <hr> <!--TODO: after css, will be removed-->
+
+    <footer>
+        <p>Copyright &copy; the edon.</p>
+    </footer>
+</body>
+
+</html>

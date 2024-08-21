@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <title>edon.</title>
+
+    <link rel="icon" href="images/contact-us.png" type="images/x-icon">
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact Us">
+    <meta name="keywords" content="Courses, Learning, Education">
+    <meta name="author" content="Stasiukevych Anatolii">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>edon. contact</h1>
+    </header>
+
+    <hr> <!--TODO: after css, will be removed-->
+
+    <main>
+        <section>
+            <h2>Send a message</h2>
+            <form>
+                <fieldset id="contact_set">
+                    <legend>Ask</legend>
+                    <p>
+                        <label for="name"><strong>name:</strong></label>
+                        <input name="name" id="name" type="text" placeholder="Your name" required>
+                    </p>
+                    <p>
+                        <label for="phone"><strong>phone:</strong></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Your phone" pattern="+380[0-9]{8}"
+                            required>
+                    </p>
+                    <p>
+                        <label for="email"><strong>email:</strong></label>
+                        <input type="email" id="email" name="email" placeholder="Your mail" required>
+                    </p>
+                    <p>
+                        <label for="message"><strong>message:</strong></label>
+                        <br>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type you message here"></textarea>
+                    </p>
+                    <button id="submit" type="submit" name="submit" formaction="https://httpbin.org/get"
+                        formmethod="get" formtarget="_blank" value="true">Submit</button>
+                    <button id="reset" type="submit" name="reset" formaction="https://httpbin.org/get" formmethod="get"
+                        formtarget="_blank" value="true">Reset</button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <h2>Our address</h2>
+            <address>
+                Lviv city, Zelena streer 204a, 109 ap.<br>
+                Phone: <a href="tel:+380980688214">+380980688214</a>
+            </address>
+            <br>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; the edon.</p>
+    </footer>
+</body>
+
+</html>
